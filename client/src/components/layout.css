@@ -1,0 +1,8 @@
+/* 레이아웃 */
+#wrap {width: 100%}
+
+#cont_cont {background: white;}
+.container{width:1110px; margin: 0 auto; height: inherit; /*background: red;*/}
+
+.cont{overflow: hidden; width: 1120px; font-size: 20px;}
+

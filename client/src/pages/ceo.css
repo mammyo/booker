@@ -1,0 +1,8 @@
+.ceoContainer  {
+    float: left;
+    width: 1120px; 
+    height:1140px; 
+    overflow: auto;
+    margin: "30px 30px 30px 0";
+    
+}

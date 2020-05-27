@@ -1,0 +1,63 @@
+/* 한글 깨지면 이거 넣으셈 */
+@charset "utf-8";
+
+/* 레이아웃 */
+#wrap {width: 100%}
+#header {
+  width: 100%; height: auto; background-color: rgb(54, 137, 229);
+}
+#footer {width: 100%; height: 200px; background-color: #222; color: white;}
+
+/* 컨텐츠 레이아웃 */
+/* #cont_tit {width: 100%; height: 200px; background: #444;} */
+/* #cont_ban {width: 100%; height: 430px; background: rgb(102, 177, 238);} */
+
+/* header의 자식이기 때문에 아래와 같이 써서 한눈에 알아보게 함 사실 .header은 안 써도 된다 */
+.header .header-menu{text-align: right;}
+
+/* a태그 안에 오른쪽 정렬(text-align: right;) 주면 안먹힘 이보다 상위에 걸어줘야한다 */
+/* 왜냐하면 글씨는 inline구조이기 때문에 안먹힘, 패딩 역시 마찬가지라 윗 부분은 패딩이 안 먹힘 */
+/* 그렇다고 블럭을 쓰면 한 칸씩 차지해버리고 처리하고 어려워짐 */
+/* 이때 인라인이면서 블록 성질을 가진inline-block을 사용한다 */
+.header .header-menu a{color: rgba(255, 255, 255, 0.815); 
+    padding: 18px 0px 0px 13px; display: inline-block; 
+    text-decoration: none; font-size: 14px;}
+
+.header .header-menu a:hover{text-decoration: underline;}
+.header .header-tit h1{font-size:27px; padding: 0px 20px 0px 20px; display: inline-block; }
+.header .header-tit a{color:white; text-decoration: none;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color:rgb(54, 137, 229);
+    color: white;
+    padding: 2px 20px 9px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(54, 137, 229);
+    min-width: 100%;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {text-decoration: underline;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
